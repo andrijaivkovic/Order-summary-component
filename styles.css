@@ -27,6 +27,7 @@ body {
   justify-content: center;
   align-items: center;
 
+  padding: 5rem 2rem;
   min-height: 100vh;
 
   background-image: url(./images/pattern-background-desktop.svg);
@@ -60,7 +61,7 @@ button {
   width: fit-content;
   overflow: hidden;
   border-radius: 20px;
-  max-width: 27.5rem;
+  /* max-width: 27.5rem; */
 
   box-shadow: 5px 20px 30px rgba(114, 128, 167, 0.25);
 }
@@ -90,6 +91,7 @@ button {
 .card__body--text p {
   text-align: center;
   line-height: 1.5;
+  max-width: 27.5ch;
   color: var(--neutral-200);
 }
 
@@ -181,6 +183,10 @@ button {
 }
 
 @media only screen and (max-width: 480px) {
+  body {
+    padding: 2rem 2rem;
+  }
+
   .order-summary__card {
     max-width: 325px;
   }
